@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <head>
+         <title>HTML Forms</title>
+         <h3>Churn Prediction</h3>
+      </head>
+      <div>
+         <form action={{ url_for('predict')}} method="post">
+      <p>Enter customers details:</p>
+      <form>
+         Months_on_book:<br> <input type="text" name="Months_on_book">
+         <br>
+         Total_Relationship_Count:<br> <input type="text" name="Total_Relationship_Count">
+         <br>
+         Months_Inactive_12_mon:<br> <input type="text" name="Months_Inactive_12_mon">
+         <br>
+         Contacts_Count_12_mon:<br> <input type="text" name="Contacts_Count_12_mon">
+         <br>
+         Credit_Limit:<br> <input type="text" name="Credit_Limit">
+         <br>
+         Total_Revolving_Bal:<br> <input type="text" name="Total_Revolving_Bal">
+         <br>
+         Total_Amt_Chng_Q4_Q1:<br> <input type="text" name="Total_Amt_Chng_Q4_Q1">
+         <br>
+         Total_Trans_Amt:<br> <input type="text" name="Total_Trans_Amt">
+         <br>
+         Total_Trans_Ct:<br> <input type="text" name="Total_Trans_Ct">
+         <br>
+         Total_Ct_Chng_Q4_Q1:<br> <input type="text" name="Total_Ct_Chng_Q4_Q1">
+         <br>
+         Avg_Utilization_Ratio:<br> <input type="text" name="Avg_Utilization_Ratio">
+         <br>
+         <input type="submit" value="Predict">
+      </form>
+   </body>
+</html>
